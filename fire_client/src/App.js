@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { fetchToken, onMessageListener } from './firebase';
 import { Button, Toast } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import AddToHomeScreen from '@ideasio/add-to-homescreen-react';
 
 function App() {
 
@@ -58,6 +59,7 @@ function App() {
 					<Button onClick={() => onShowNotificationClickedWith2sec()}>Show Toast 2sec</Button>
 				</div>
 			</header>
+			<AddToHomeScreen />
 
 		</div>
 	);
